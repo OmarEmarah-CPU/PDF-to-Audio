@@ -11,7 +11,7 @@ Language = ''
 OutputName = ''
 
 File = PdfReader(FilePath)
-Content = File.pages[0].extract_text()
+Content = ""
 for i in range(len(File.pages)):
     #Reading the entire PDF
     Content += File.pages[i].extract_text()
