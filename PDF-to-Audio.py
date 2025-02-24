@@ -17,6 +17,6 @@ for i in range(len(File.pages)):
     Content += File.pages[i].extract_text()
 
 
-Audio = gTTS(Content, lang=Language , slow=False)
+Audio = gTTS(text=Content, lang=Language , slow=False)
 Audio.save(OutputName)
 
